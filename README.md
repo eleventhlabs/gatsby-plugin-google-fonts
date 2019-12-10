@@ -2,9 +2,9 @@
 
 ## What problem does Your Fonts solve?
 
-`gatsby-plugin-your-fonts` makes it easy to use private fonts in your gatsby projects.
+`gatsby-plugin-your-fonts` makes it easy to use self-hosted fonts in your gatsby projects.
 
-After setting up `gatbsy-plugin-your-fonts` for one project, you'll never need to set up `@font-face` boilerplate again. After your first configuration, you can just specify the fonts you want to use for your project in `gatsby-config.js` and you can automagically use the deisred fonts in your styling files (.css, .sass, ,less, etc.).
+After setting up `gatbsy-plugin-your-fonts` for one project, you'll never need to set up `@font-face` boilerplate again. After your first configuration, you can just specify the fonts you want to use for your project in `gatsby-config.js` and you can automagically use the desired fonts in your styling files (.css, .sass, ,less, etc.).
 
 In the future, Your Fonts will include tooling that will automatically handle the initial configuration.
 
@@ -23,32 +23,31 @@ npm install gatsby-plugin-your-fonts --save
 Host your font assets on Github Pages so they follow this directory structure:
 
 ```
-/fonts/dist/
-  font1/
-    *.tff|otf|etc.
-  font2/
-    *.tff|otf|etc.
-  font1.css
-  font2.css
+font-one/
+  *.tff|otf|etc.
+font-two/
+  *.tff|otf|etc.
+font-one.css
+font-two.css
 ```
 
 You should be able to access:
-* your font files (.tff|otf...) files at `yourgithub.github.io/fonts/font1/*.(tff|orf...)`.
-* your .css files at `yourgithub.github.io/fonts/font1.css`
+* your font files (.tff|otf...) files at `yourgithub.github.io/fonts/font-one/*.(tff|orf...)`.
+* your .css files at `yourgithub.github.io/fonts/font-one.css`
 
 Where font1.css looks something like
 
 ```css
 @font-face {
-  font-family: 'Font 1 Name';
-  src: url('./font1/font1-regular.otf') format('opentype');
+  font-family: 'Font One';
+  src: url('./font1/font-one-regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Font 1 Name';
-  src: url('./font1/font1-bold.otf') format('opentype');
+  font-family: 'Font One';
+  src: url('./font1/font-one-bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
@@ -72,8 +71,8 @@ module.exports = {
       options: {
         host: 'yourgithub.github.io/fonts',
         fonts: [
-          `font1.css`,
-          `font2.css`
+          `font-one.css`, // font-family: 'Font One';
+          `font-two.css` // font-family: 'Font Two';
         ]
       }
     }
