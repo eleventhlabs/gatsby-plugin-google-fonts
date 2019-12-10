@@ -12,7 +12,7 @@ exports.onRenderBody = function(_ref, options) {
 
   // Iterate through each font to get location on the web.
   const cssFileUris = options.fonts.map((fontfile) => {
-    return 'https://' + options.host + '/' + fontfile;
+    return 'https://' + options.host + '/' + fontfile
   })
 
   // Create link elements to each font .css file.
@@ -24,7 +24,7 @@ exports.onRenderBody = function(_ref, options) {
     })
   })
 
-  // Stuff links in the head
+  // Stuff links in the head.
   const setHeadComponents = _ref.setHeadComponents
   setHeadComponents(linkElements)
 }

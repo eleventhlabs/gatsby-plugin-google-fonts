@@ -16,7 +16,7 @@
     "gatsby-plugin",
     "fonts",
     "custom",
-    "react",
+    "react"
   ],
   "author": "Calvin LeGassick <calvin@eleventhlabs.io>",
   "license": "MIT",
