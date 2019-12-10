@@ -72,8 +72,8 @@ module.exports = {
       options: {
         host: 'yourgithub.github.io/fonts',
         fonts: [
-          `apercu-pro.css`, // { font-family: Apercu Pro }
-          `qanelas-soft.css` // { font-family: Qanelas Soft }
+          `font1.css`,
+          `font2.css`
         ]
       }
     }
