@@ -1,11 +1,11 @@
-# gatsby-plugin-google-fonts
+# gatsby-plugin-your-fonts
 
 ## How to use it ?
 
 ```js
-yarn add gatsby-plugin-google-fonts
+yarn add gatsby-plugin-your-fonts
 // or
-npm install gatsby-plugin-google-fonts --save
+npm install gatsby-plugin-your-fonts --save
 ```
 
 Add some fonts to your `gatsby-config.js`:
@@ -13,14 +13,14 @@ Add some fonts to your `gatsby-config.js`:
 ```js
 module.exports = {
   siteMetadata: {
-    title: `I like Google fonts`
+    title: `I like my fonts`
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-your-fonts`,
       options: {
         fonts: [
-          `limelight`,
+          `Circular`,
           `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
         ],
         display: 'swap'
@@ -29,9 +29,3 @@ module.exports = {
   ]
 }
 ```
-
-
-## How to find great ideas ?
-
-- https://fonts.google.com
-- http://fontpair.co/
