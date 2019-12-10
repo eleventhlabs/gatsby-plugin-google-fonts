@@ -70,7 +70,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-your-fonts',
       options: {
-        host: 'eleventhlabs.github.io/fonts',
+        host: 'yourgithub.github.io/fonts',
         fonts: [
           `apercu-pro.css`, // { font-family: Apercu Pro }
           `qanelas-soft.css` // { font-family: Qanelas Soft }
